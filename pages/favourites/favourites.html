@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project</title>
+
+    <script src="https://kit.fontawesome.com/5f4e19aa8d.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="favourites.css">
+    <link rel="stylesheet" type="text/css" href="../my-playlist/my-playlist.css">
+    <link rel="stylesheet" type="text/css" href="../../shared-css/background.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="search-field">
+            <input type="text" id="searchInput" placeholder="Name...">
+            <select id="ratingFilter">
+                <option value="" selected>All Ratings</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button type="button" id="filterButton">Filter</button>
+        </div>
+
+        <div class="navbar">
+
+            <button type="button" id="goBack"><i class="fa-solid fa-list fa-2x"></i></button>
+
+            <div class="avatar" id="avatar">
+                <div class="dropdown">
+                    <button id="avatarBtn" class="dropbtn"></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <button id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="theFavourites">
+
+        <div id="favouritesWrap"></div>
+
+        <div id="songModal" class="modal">
+        </div>
+
+    </div>
+
+</body>
+<script type="module" src="../../navbar/navbar.mjs"></script>
+<script type="module" src="favourites.mjs"></script>
+<!-- <script type="module" src="../../data/song-data.mjs"></script> -->
+<script type="module" src="../../classes/song-class.mjs"></script>
+<script type="module" src="../../utils/utils.mjs"></script>
+<script type="module" src="../../classes/login-class.mjs"></script>
+
+</html>

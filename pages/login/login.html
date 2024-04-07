@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="../../shared-css/background.css">
+</head>
+
+<body>
+    <div class="flip-card" id="cardContainer">
+        <div class="card-inner" id="innerCard" >
+            <form id="logInForm" class="form-container">
+
+                <h2>Login</h2>
+
+                <div id="errorMsg">Both fields are required!</div>
+                <div id="signUpSuccessMsg">Signed Up Successfully!</div>
+
+                <label>Username:</label>
+                <input  id="usernameInput" name="username" type="text" />
+
+                <label>Password:</label>
+                <input  id="passwordInput" name="password" type="password" />
+
+                <button type="button" id="logInBtn">Log in</button>
+
+                <h4>Don't have an account? <button type="button" id="signUpBtn">Sign up!</button></h4>
+
+            </form>
+
+            <form id="signUpForm" class="form-container">
+
+                <h2>Sign in</h2>
+
+                <div id="signUpErrorMsg">All fields are required!</div>
+
+                <label>Full name:</label>
+                <input name="fullName" type="text" />
+                <div id="fullNameErrorMsg">Your full name is required!</div>
+
+                <label>Username:</label>
+                <input name="username" type="text" />
+                <div id="usernameErrorMsg">Username is required and should not include any special characters or numbers!</div>
+
+                <label>Password:</label>
+                <input name="signInPassword" type="text" />
+                <div id="passwordErrorMsg">Password should be at least 10 characters long, have one uppercase and one lowercase letter and have at least one special character!</div>
+
+                <label>Confirm password:</label>
+                <input name="confirmPassword" type="text" />
+
+                <button type="button" id="signInBtn">Sign in</button>
+
+                <h4>Already have an account? <button type="button" id="LoginBtn">Log in!</button></h4>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="login.mjs"></script>
+<script type="module" src="signup.mjs"></script>
+
+</html>

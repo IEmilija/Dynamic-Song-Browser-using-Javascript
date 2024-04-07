@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} 
+
+#welcome {
+    text-align: center;
+}
+
+#welcome h1{
+    color: whitesmoke;
+    font-size: 55px;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+}
+
+button {
+    background: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+}
